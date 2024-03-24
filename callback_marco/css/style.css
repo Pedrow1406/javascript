@@ -1,0 +1,23 @@
+.botao_login, .botao_signup{
+    font-size: 1rem;
+    border: .8px solid black;
+    border-radius: 2px;
+    margin-right:10px ;
+    transition: .45s background ease;
+}
+.botao_login{
+    background-color: rgb(56, 168, 12);
+}
+.botao_signup{
+    background-color: rgb(238, 43, 43);
+}
+.no-opacity-signup:hover{
+    background-color: rgb(182, 32, 32);
+}
+.no-opacity-login:hover{
+    background-color: rgb(46, 126, 15);
+}
+
+.opacity{
+    opacity: .6;
+}
