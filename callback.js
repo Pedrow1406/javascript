@@ -1,8 +1,18 @@
-function funcao_principal(callback){
-    console.log('Estamos na função principal e vamos redireciona-lo para outra função')
-    callback()
+async function exemplo() {
+    console.log('Antes do await');
+    await algumaPromise();
+    console.log('Depois do await');
 }
-cb = () => {
-    console.log('Agora estamos no callback')
+
+function algumaPromise() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            console.log('Resolvendo a promessa');
+            resolve();
+        }, 2000);
+    });
 }
-funcao_principal(cb)
+
+console.log('Início do código');
+exemplo();
+console.log('Fim do código');
